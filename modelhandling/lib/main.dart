@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:modelhandling/screen/login_screen.dart';
+import 'package:modelhandling/screen/chat_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
  void main() async {
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
 
-      title: 'Student Info Manager',
+      title: 'Flutter Chat',
 
       debugShowCheckedModeBanner: false,
 
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
 
       ),
 
-      home: const LoginPage(),
+      home: const ChatPage(username: 'User'),
 
     );
 
